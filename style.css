@@ -1,0 +1,71 @@
+/*declaring css variables*/ 
+:root {
+    --direction-of-flex: row;
+  }
+  
+  @media (max-width: 650px) {
+    :root {
+      --direction-of-flex: column;
+    }
+  }
+body{
+  margin: 0px;
+  background-color: #ffffff;
+}
+#title{
+  margin: 0px;
+  font-size: 5em;
+  font-family: Lobster;
+}
+#subtitle{
+  font-family: Roboto;
+  font-size: 1.2em;
+}
+header{
+  text-align: center;
+  background-color: #7494c4;
+  padding: 0.5em;
+  color: white;
+}
+#title{
+  display: flex;
+  justify-content: center;
+}
+#subtitle{
+  display: flex;
+  justify-content: center;
+}
+figure{
+ padding-top: 2em;
+  display: flex;
+  flex-direction: var(--direction-of-flex,row);
+  justify-content: space-around;
+  align-items: center;
+}
+figcaption {
+  font-size: 1.5em;
+}
+img{
+  border-radius: 30%;
+  display: block;
+  height: auto;
+  max-width: 30%;
+  padding: 1em 1em;
+}
+#tribute-info{
+  padding: 1em 2em;
+  background-color: #7494c4;
+  color: white;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 1.2em;
+}
+h2{
+  text-align: center;
+}
+a{
+  color: yellow;
+}
+a:hover{
+  color: black;
+}
